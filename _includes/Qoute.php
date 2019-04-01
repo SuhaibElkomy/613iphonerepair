@@ -1,10 +1,10 @@
 <?php
 
-  $fname = $_POST['name'];
+  $fname = $_POST['firstname'];
 
-  $lname_email = $_POST['email'];
+  $lname_email = $_POST['lastname'];
 
-  $country = $_POST['message'];
+  $country = $_POST['country'];
 
 $email_from = 'Suhaib@613iphonerepair.ca';
 
