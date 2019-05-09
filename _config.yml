@@ -1,7 +1,7 @@
 # Site settings
 title: 613iPhonerepair
 email: 613iphoner@gmail.com
-description: > Same Sevice For Less
+description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
