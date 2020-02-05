@@ -2,143 +2,85 @@
 <head>
 
 <style>
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-}
-  div.form
-{
-    display: block;
-    text-align: center;
-}
-form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+section#Quote {
+    background-color: #222;
+    background-image: url('/img/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#contact {
- 
-  background: #F9F9F9;
-  padding: 100px;
-  margin: 20px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #777;
-  
+section#Quote .section-heading {
+    color: #fff;
 }
 
-#contact h3 {
-  display: block;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 10px;
+section#Quote .form-group {
+    margin-bottom: 25px;
 }
 
-#contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
+section#Quote .form-group input,
+section#Quote .form-group textarea {
+    padding: 20px;
 }
 
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
+section#Quote .form-group input.form-control {
+    height: auto;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 30px;
+section#Quote .form-group textarea.form-control {
+    height: 236px;
 }
 
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+section#Quote .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
 }
 
-#contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
+section#Quote::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
 }
 
-#contact button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: #FF4500;
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
+section#Quote:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
 }
 
-#contact button[type="submit"]:hover {
-  background: #43A047;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+section#Quote::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
 }
 
-
-
-.copyright {
-  text-align: center;
+section#Quote:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
 }
 
-#contact input:focus,
-#contact textarea:focus {
-  outline: 0;
-  border: 1px solid #aaa;
-}
-
-::-webkit-input-placeholder {
-  color: #888;
-}
-
-:-moz-placeholder {
-  color: #888;
-}
-
-::-moz-placeholder {
-  color: #888;
-}
-
-:-ms-input-placeholder {
-  color: #888;
+section#Quote .text-danger {
+    color: #e74c3c;
 }
 </style>
 </head>
  
-  <div class="form">
+  <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Ready to make your Move?</h3>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-12">
-                    <form id="contact" action="https://formspree.io/613iphoner@gmail.com" method="POST" novalidate>
+                    <form id="contact" action="https://formspree.io/613movingandstorage@gmail.com" method="POST" novalidate>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="control-group form-group">
                                     <input type="text" class="form-control" placeholder="Your Name *" name="name" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
@@ -152,9 +94,9 @@ fieldset {
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control" placeholder="Which phone do you have and what issues are you experiencing*" name="message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="ex. Two bedroom condo *" name="message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -166,5 +108,6 @@ fieldset {
                         </div>
                     </form>
                 </div>
-</div>
-  </section>
+            </div>
+        </div>
+    </section>
